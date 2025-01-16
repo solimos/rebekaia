@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Rebeka 2025 v1</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Simonetta:ital,wght@0,400;0,900;1,400;1,900&display=swap');
+body {background-color: #0e0e0e; cursor: url(''), auto;}
+
+.green-audio-player {opacity:0;}
+
+/* -------------- BOX GENERALE -------------- */
+.box_generale { width: 670px; 
+                height: 670px;
+                margin-left: 170px;
+                margin-top: 40px;
+                position: relative; 
+                overflow: hidden;}
+
+
+/* -------------- IMMAGINE VERTICALE 1 -------------- */
+.immagine_grande { position: absolute; 
+                   z-index:3; 
+                   width: 450px; 
+                   height: 600px;
+                   margin-left: 0px;
+                   margin-top: 0px;
+                   background-image: url(https://i.imgur.com/vmLVQef.gif); 
+                   -webkit-transition:all 1.0s ease-in-out; 
+                   -o-transition:all 1.5s ease-in-out; 
+                   transition:all 1.5s ease-in-out; }
+
+.box_generale:hover 
+.immagine_grande { position: absolute;
+                   z-index:3;
+                   margin-top: 0px;
+                   margin-left: 0px;
+                   -webkit-transition:all 1.0s ease-in-out; 
+                   -o-transition:all 1.5s ease-in-out;
+                   transition:all 1.5s ease-in-out; 
+                   background-image: url(https://i.imgur.com/ji6pOqR.gif); }
+
+
+/* -------------- IMMAGINE 1 -------------- */
+.immagine_1 { position: absolute; 
+              z-index:4; 
+              width: 187px; 
+              height: 42px;
+              margin-left: 132px;
+              margin-top: 167px;
+              opacity:0;
+              background-image: url(https://i.imgur.com/VfBo5ZV.png); 
+              -webkit-transition:all 1.0s ease-in-out; 
+              -o-transition:all 1.5s ease-in-out; 
+              transition:all 1.5s ease-in-out; }
+
+.box_generale:hover 
+.immagine_1 { position: absolute;
+              z-index:4;
+              opacity:1;
+              -webkit-transition:all 4.0s ease-in-out; 
+              -o-transition:all 4.5s ease-in-out;
+              transition:all 4.5s ease-in-out; }
+
+
+/* -------------- BOX TESTO -------------- */
+.box_testo_2 { position: absolute;
+              overflow: hidden;
+              width: 200px;
+              height: 400px;
+              margin-left: 300px;
+              margin-top: 110px;
+              background-color: #0e0e0e;
+              z-index:2;
+              opacity:0;
+              transform: rotate(5deg);
+              border: double 3px #575642;
+              -moz-transition: all ease-in-out 1.5s; 
+              -webkit-transition: all ease-in-out 1.5s; 
+              -o-transition: all ease-in-out 1.5s; 
+              transition-delay: 1.5s;}
+
+.box_generale:hover 
+.box_testo_2 { transition-delay: 1.5s; 
+               opacity: 1;
+               z-index:4;
+               margin-left: 390px;
+               margin-top: 110px;}
+
+
+.box_testo_2_int { position: absolute;
+                    overflow: auto;
+                    width: 180px;
+                    height: 400px;
+                    margin-left: 10px;
+                    margin-top: 10px;
+                    color: #a0a29f;
+                    font-family: "Chakra Petch", sans-serif;
+                    text-align: justify;
+                    font-size:9px;
+                    line-height: 10px;
+                    letter-spacing: 0px;
+                    padding-right: 20px;
+                    text-align: justify;
+                    text-shadow: 1px 1px 0px #000000; }
+
+
+/* -------------- GIF -------------- */
+.gif_1 { position: absolute; 
+         z-index:2; 
+         width: 145px; 
+         height: 70px;
+         margin-left: 0px;
+         margin-top: 500px;
+         border: dotted 1px #575642;
+         border-radius: 0px 0px 20px 20px;
+         background-image: url('https://i.imgur.com/gqWwCTL.gif'); 
+         opacity: 1;
+         -moz-transition: all ease-in-out 1.5s; 
+         -webkit-transition: all ease-in-out 1.5s; 
+         -o-transition: all ease-in-out 1.5s; 
+         transition-delay: 1.5s;}
+.box_generale:hover 
+.gif_1 { transition-delay: 1.5s; 
+         opacity: 1;
+         z-index:2;
+         margin-left: 0px;
+         margin-top: 598px;}
+
+.gif_2 { position: absolute; 
+         z-index:2; 
+         width: 145px; 
+         height: 70px;
+         margin-left: 151px;
+         margin-top: 500px;
+         border: dotted 1px #575642;
+         border-radius: 0px 0px 20px 20px;
+         background-image: url('https://i.imgur.com/fhSErul.gif');
+         opacity: 1;
+         -moz-transition: all ease-in-out 1.5s; 
+         -webkit-transition: all ease-in-out 2.5s; 
+         -o-transition: all ease-in-out 1.5s; 
+         transition-delay: 1.5s; }
+.box_generale:hover 
+.gif_2 { transition-delay: 1.5s; 
+         opacity: 1;
+         z-index:2;
+         margin-left: 151px;
+         margin-top: 598px;}
+
+.gif_3 { position: absolute; 
+         z-index:2; 
+         width: 145px; 
+         height: 70px;
+         margin-left: 302px;
+         margin-top: 500px;
+         border: dotted 1px #575642;
+         border-radius: 0px 0px 20px 20px;
+         background-image: url('https://i.imgur.com/xTYz8Xy.gif');
+         opacity: 1;
+         -moz-transition: all ease-in-out 1.5s; 
+         -webkit-transition: all ease-in-out 3.5s; 
+         -o-transition: all ease-in-out 1.5s; 
+         transition-delay: 1.5s; }
+.box_generale:hover 
+.gif_3 { transition-delay: 1.5s; 
+         opacity: 1;
+         z-index:2;
+         margin-left: 302px;
+         margin-top: 598px;}
+
+
+/* -------------- BOX AUDIO -------------- */
+.box_audio { position: relative;
+             overflow: hidden;
+             width: 400px;
+             height: 40px;
+             margin-left: 400px;
+             margin-top: -59px;
+             border-radius: 5px;
+             background-color:#0e0c0b;
+             z-index:3;} 
+
+
+/* -------------- STYLE -------------- */
+b1 { font-family: tahoma; 
+     text-transform: uppercase; 
+     color: #443B26; 
+     letter-spacing: 3px; 
+     font-style: bold; 
+     font-size: 8px; } 
+
+b2 { color: #4a2525; 
+     text-shadow: 1px -1px 0px #000; } 
+
+b3 { font-family: georgia; 
+     text-transform: lowercase; 
+     font-style: italic; 
+     letter-spacing: 1.5px; 
+     color: #514832; 
+     font-size: 8px; } 
+ 
+b4 { font-family: 'Roboto Mono', monospace; 
+     color: #3b0707; 
+     color: #333; 
+     letter-spacing: 1px;  
+     text-transform: uppercase; 
+     text-shadow: 1px -1px 0px #000; 
+     -moz-transition: all ease-in 0.5s; 
+     -webkit-transition: all ease-in 0.5s; 
+     -o-transition: all ease-in 0.5s; } 
+
+b4:hover { color: #4c2b2b; }  
+
+b5 { font-family: tahoma; 
+     color: #443B26; 
+     letter-spacing: 1px; 
+     font-style: bold; 
+     font-size: 8px; } 
+</style>
+
+<div class="box_audio"><audio controls="" autoplay="" preload="metadata" style="height:40px; width: 400px; filter:invert(100%); "><source src="https://od.lk/s/NV8xOTg3NjE4ODlf/HouseOfHope.mp3"></audio></div>
+
+<center>
+<div class="box_generale">
+<div class="immagine_1"></div>
+<div class="immagine_grande"></div>
+
+
+<div class="box_testo_2">
+<div class="box_testo_2_int">
+<b1>REBEKA <b2>“BEKA”</b2> Danielian Blackmore</b1> ha la <b4>bellezza degli alti valli dell'Azat</b4> cucita addosso e la <b3>sfarzo</b3> delle sue strade che gli scorre nelle vene; la socialità di chi è cresciuto tra <b3>oro</b3> e <b3>soldi</b3>, plasmato addosso una corazza di <G1>superiorità</G1>, effimera, ironia tagliente e lo <b3>charme</b3> sensuale di una donna dalla vita vissuta, che cela una donna alle volte <b3>dolce</b3> e romantica. Vissuta sotto le lige regole di avvocati e studi penali, dalle buone intenzioni fatte di <b3>falsi</b3> e <b3>cortesi</b3> sorrisi che celano un animo ben differente, mosso da decisioni solitarie, stacanoviste per alcuni, ribelli. Accarezzata dalle <b4>fila demoniache dal momento del proprio concepimento</b4>, cresciuta lontana dalla realtà. <b4>Coccolata tra le braccia di una madre bugiarda</b4>, ma come si dice <b5>“era una bugia a fin di bene”</b5>.  Una morte può fa soffrire, chi ti ha cresciuto come un padre potrebbe distruggere, eppure, da quella morte si può rinascere, avere le proprie rivalse o semplicemente stringere tra le lunghe dita la parte più materiale della <b3>vita</b3>, eppure, qualcosa di dolce riesce a sopravvivere ad una vita di questo genere: l’amore – imposto, organizzato, non vissuto, ma fulminante – <b5>“Oh tu, mio caro Padre, osservarmi mentre ottengo ciò che volevi, ciò che voglio, ciò che vuoi”</b5> – <b3>preghi</b3>, ma non è chi credi davvero che ti ascolta, il sangue nelle vene cambia, il sangue non è umano e stringi tra le dita, ciò che sei davvero.
+</div></div>
+
+<div class="gif_1"></div>
+<div class="gif_2"></div>
+<div class="gif_3"></div>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
